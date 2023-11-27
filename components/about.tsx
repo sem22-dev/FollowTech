@@ -93,17 +93,17 @@ export default function AboutUs(){
                 
             </div>
 
-            {/* <div className='bg-[#1a1a1a] text-white px-8 py-4 text-lg font-bold border border-[#292929] rounded-lg'>
-            <h1 className="font-smooch italic text-3xl">
-                        <span className="text-[#4BDE80]">$FOL</span> Official Address
-                    </h1>
-              <div className=" flex flex-col md:flex-row gap-12 py-6">
-                    <p className="border border-[#454545] rounded-xl px-4 py-4">{officialAddress}</p>
-                    <button onClick={copyToClipboard} className="bg-[#4BDE80] font-light px-6 rounded-xl  text-black">
-                        {isCopied ? 'Copied!' : 'Copy'}
-                </button>
-              </div>
-            </div> */}
+                {/* <div className='bg-[#1a1a1a] text-white px-8 py-4 text-lg font-bold border border-[#292929] rounded-lg'>
+                <h1 className="font-smooch italic text-3xl">
+                            <span className="text-[#4BDE80]">$FOL</span> Official Address
+                        </h1>
+                <div className=" flex flex-col md:flex-row gap-12 py-6">
+                        <p className="border border-[#454545] rounded-xl px-4 py-4">{officialAddress}</p>
+                        <button onClick={copyToClipboard} className="bg-[#4BDE80] font-light px-6 rounded-xl  text-black">
+                            {isCopied ? 'Copied!' : 'Copy'}
+                    </button>
+                </div>
+                </div> */}
                 
            </div>
         </main>
