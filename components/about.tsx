@@ -1,20 +1,47 @@
+"use client"
+
 import Image from "next/image";
 import { Rocket, DollarSign, PieChart, Loader } from "lucide-react"; // Import appropriate icons
-
+import { useState } from "react";
 
 export default function AboutUs(){
+
+    const officialAddress = '0x57841dCD3d3B1668A8085E748B3648C81C86f777';
+    const [isCopied, setIsCopied] = useState(false);
+  
+    const copyToClipboard = () => {
+      // Create a textarea element and set its value to the official address
+      const textarea = document.createElement('textarea');
+      textarea.value = officialAddress;
+      textarea.setAttribute('readonly', '');
+      textarea.style.position = 'absolute';
+      textarea.style.left = '-9999px';
+      document.body.appendChild(textarea);
+  
+      // Select and copy the text inside the textarea
+      textarea.select();
+      document.execCommand('copy');
+  
+      // Remove the temporary textarea
+      document.body.removeChild(textarea);
+  
+      // Set the copied state to true and reset after a short delay
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 5000);
+    };
+
     return(
-        <main id="about" className=" min-h-screen flex justify-center py-24 border-b rounded-b-2xl border-[#3e3e3e] rounded-e-lg">
+        <main id="about" className=" min-h-screen flex justify-center py-24 border-b rounded-b-2xl border-[#3e3e3e] rounded-e-lg px-4   ">
            <div className="flex flex-col items-center gap-12">
                 <div className ="Btn "></div>
                 <h1 className="text-center text-4xl text-white leading-relaxed">
-                    Welcome To FOLLOTECH ($FOL) <br />
+                    Welcome To FOLLOTECH (<span className="text-[#4BDE80]">$FOL</span>) <br />
                     Twitter's Follower-Powered Coin <br />
                 </h1>
 
 
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
-                <div className="cards">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 ">
+                <div className="cards w-[370px] md:w-[500px]">
                         <figure className="card">
                             <figcaption className="card_title flex items-center gap-4">
                             <Rocket color="white" size={50} />
@@ -61,9 +88,22 @@ export default function AboutUs(){
                             </figcaption>
                         </figure>
                 </div>
+
+
                 
             </div>
 
+            {/* <div className='bg-[#1a1a1a] text-white px-8 py-4 text-lg font-bold border border-[#292929] rounded-lg'>
+            <h1 className="font-smooch italic text-3xl">
+                        <span className="text-[#4BDE80]">$FOL</span> Official Address
+                    </h1>
+              <div className=" flex flex-col md:flex-row gap-12 py-6">
+                    <p className="border border-[#454545] rounded-xl px-4 py-4">{officialAddress}</p>
+                    <button onClick={copyToClipboard} className="bg-[#4BDE80] font-light px-6 rounded-xl  text-black">
+                        {isCopied ? 'Copied!' : 'Copy'}
+                </button>
+              </div>
+            </div> */}
                 
            </div>
         </main>

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="bg-black">
         <Hero />
-        <motion.div
+          <motion.div
                 initial="hidden"
                 whileInView="visible"
                 transition={{ duration: 1, delay: 0.1 }}

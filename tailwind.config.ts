@@ -55,6 +55,12 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      fontFamily: {
+       
+        fugaz : ['var(--font-fugaz)'],
+        inter : ['var(--font-inter)'],
+        smooch: ['var(--font-smooch)'],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
