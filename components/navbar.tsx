@@ -85,7 +85,7 @@ export default function Navbar() {
                             </ScrollLink>
                         </li>
                         <li>
-                            <Link href="/support" className=" hover:text-green-500 transition-all duration-200">Dexscreener</Link>
+                            <Link href="https://dexscreener.com/" className=" hover:text-green-500 transition-all duration-200">Dexscreener</Link>
                         </li>
                     </ul>
                 </div>
@@ -122,7 +122,7 @@ export default function Navbar() {
               <Link className="block py-4 border-b" onClick={() => setShowMenu(false)} href={'/'}>
                 How to Buy
               </Link>
-              <Link className="block py-4 border-b" onClick={() => setShowMenu(false)} href={'/'}>
+              <Link className="block py-4 border-b" onClick={() => setShowMenu(false)} href={'https://dexscreener.com/'}>
                 Dexscreener
               </Link>
             </div>

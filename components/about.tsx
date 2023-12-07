@@ -93,7 +93,7 @@ export default function AboutUs(){
                 
             </div>
 
-                {/* <div className='bg-[#1a1a1a] text-white px-8 py-4 text-lg font-bold border border-[#292929] rounded-lg'>
+                <div className='bg-[#1a1a1a] text-white px-8 py-4 text-lg font-bold border border-[#292929] rounded-lg'>
                 <h1 className="font-smooch italic text-3xl">
                             <span className="text-[#4BDE80]">$FOL</span> Official Address
                         </h1>
@@ -103,7 +103,7 @@ export default function AboutUs(){
                             {isCopied ? 'Copied!' : 'Copy'}
                     </button>
                 </div>
-                </div> */}
+                </div>
                 
            </div>
         </main>
